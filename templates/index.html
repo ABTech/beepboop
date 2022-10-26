@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Beep Boop!</title>
+
+    <script>
+        function beepboop() {
+            fetch("/api/push", {method: "POST"});
+        }
+    </script>
+</head>
+<body>
+    <!-- TODO add CSS -->
+    <h1>Beep Boop!</h1>
+    <h3>Commemorate an iconic piece of CMU history</h3>
+    <br>
+    <button onclick="beepboop();">Beep the Boop!</button>
+    <br>
+    <p>Developed as a collaboration between the CMU Robotics Club and AB Tech.</p>
+</body>
+</html>
