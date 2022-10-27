@@ -36,5 +36,8 @@ def push():
     return "OK"
 
 # for debug only; prod should run on gunicorn
-if __name__ == "__main__":
+def main():
     app.run("0.0.0.0", port=6331)
+
+if __name__ == "__main__":
+    main()
