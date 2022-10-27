@@ -29,7 +29,7 @@ def push():
     print("Beeping the boop")
     if (time.time() - tmp) > CUTOFF_TIME:
         try:
-            requests.get(os.environ["BEEPBOOP_URL"])
+            requests.get(os.environ["BEEPBOOP_URL"], timeout=3)
         except:
             print("Beepboop is offline.")
 
